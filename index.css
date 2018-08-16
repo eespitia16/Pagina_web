@@ -9,12 +9,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 .nav-wrapper{
+    background-color:rgb(60, 59, 70);
     padding:65px;
     position: relative;
     border-bottom: 0.1px solid rgb(209, 206, 206);  
+    box-sizing: border-box;
 }
 
 .responsive-img{
@@ -24,21 +24,18 @@ body{
     margin: -34px 0px 0px -29px; 
 }
 
-.barra{
+.barra {
     position: absolute;
     margin: -34px 0px 0px 182px; 
-    transition: 1s;
     font-size: 10px;
-   
-
 }
-.log{
+.log1{
     position: absolute;
-    margin: -90px 0px 0px 970px; 
+    margin: -90px 0px 0px 1010px; 
     font-size: 13px;
 }
 
-.log:hover{
+.log1:hover{
     color: #FF5274;
     background: transparent;
   }
@@ -50,7 +47,7 @@ body{
   height: 40px;
   transition: .4s;
   position: absolute;
-  margin: -85px 0px 0px 1040px; 
+  margin: -80px 0px 0px 1072px;
   text-align: center;
   font-size: 13px;
  
@@ -104,8 +101,8 @@ body{
 
 
 .bt2{
-    border: 1.5px rgb(238, 58, 94) solid;
-    color: rgb(238, 58, 94);
+  border: 1.5px rgb(238, 58, 94) solid;
+  color: rgb(238, 58, 94);
   width: 150px;
   border-radius: 100px;
   height: 40px;
@@ -118,4 +115,21 @@ body{
 .bt2:hover{
     background: rgb(238, 58, 94);
     color: white;
+  }
+ 
+   .col .large{
+     color: #FF5274;
+     font-size: 40px;
+     margin: 570px 0px 20px 20px;
+  } 
+
+  .tit{
+    margin:-62px 0px 0px 92px;
+
+    
+  }
+  .par1{
+    margin: 7px 0px 20px 92px;
+
+    color: rgb(181, 187, 192);
   }
