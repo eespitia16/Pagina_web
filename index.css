@@ -36,7 +36,7 @@ body{
 }
 .log1{
     position: absolute;
-    margin: -90px 0px 0px 974px; 
+    margin: 23px 0px 0px 974px; 
     font-size: 13px;
     color:white;
 }
@@ -61,7 +61,7 @@ body{
   height: 40px;
   transition: .4s;
   position: absolute;
-  margin: -100px 0px 0px 1027px;
+  margin: 19px 0px 0px 1027px;
   text-align: center;
   font-size: 13px;
  
