@@ -9,30 +9,43 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.nav-wrapper{
-    background-color:rgb(60, 59, 70);
-    padding:65px;
-    position: relative;
+    
+
+ .nav-wrapper{
+    
+    background: transparent;
+    padding:60px;
+    position: fixed;
     border-bottom: 0.1px solid rgb(209, 206, 206);  
     box-sizing: border-box;
+    
 }
 
-.responsive-img{
-    position: absolute;
-}
+
 .brand-logo{
+    position: fixed;
     margin: -34px 0px 0px -29px; 
 }
 
 .barra {
+    position: fixed;
+    background: none;
     position: absolute;
-    margin: -34px 0px 0px 182px; 
+    margin: -54px 0px 0px 182px; 
     font-size: 10px;
 }
 .log1{
     position: absolute;
-    margin: -90px 0px 0px 1010px; 
+    margin: -90px 0px 0px 974px; 
     font-size: 13px;
+    color:white;
+}
+.fondo{
+    position: relative;
+    padding: 0 41px;
+    height: 594px;
+    background: url(img/hero.jpg);
+
 }
 
 .log1:hover{
@@ -40,14 +53,15 @@ body{
     background: transparent;
   }
 .bt1{
+  color:white;
   border: 1.5px rgb(247, 243, 244) solid;
-  width: 150px;
-  padding: 0px 40px;
+  width: 138px;
+  padding: 9px 28px;
   border-radius: 100px;
   height: 40px;
   transition: .4s;
   position: absolute;
-  margin: -80px 0px 0px 1072px;
+  margin: -100px 0px 0px 1027px;
   text-align: center;
   font-size: 13px;
  
@@ -65,6 +79,8 @@ body{
 }
 .barra li a{
     font-size: 13px;
+    margin: 18px 85px 0px -81px; 
+
 }
 .sidenav{
     
@@ -74,25 +90,25 @@ body{
 .center-align{
     position: absolute;
     color: white;
-    margin: 198px 0px 0px 290px; 
+    margin:125px 0px 0px 247px;
 }
 .center-align2{
     position: absolute;
     color: white;
-    margin: 298px 0px 0px 188px;
+    margin: 234px 0px 0px 142px;
     font-size: 21px; 
 }
 .log2{
     border: 1.5px rgb(252, 82, 116) solid;
     background-color: #FF5274;
     color: white;
-    width: 150px;
+    width: 160px;
     border-radius: 100px;
-    height: 40px;
+    height: 55px;
     transition: .4s;
     position: absolute;
-    margin:  398px 0px 0px 388px;
-    text-align: center;
+    margin:  358px 0px 0px 411px;
+    padding: 18px 39px;
     font-size: 13px;
   }
   .log2:hover{
@@ -101,35 +117,45 @@ body{
 
 
 .bt2{
-  border: 1.5px rgb(238, 58, 94) solid;
-  color: rgb(238, 58, 94);
-  width: 150px;
-  border-radius: 100px;
-  height: 40px;
-  transition: .4s;
-  position: absolute;
-  margin:  398px 0px 0px 588px;
-  text-align: center;
-  font-size: 13px;
+    border: 1.5px rgb(238, 58, 94) solid;
+    color: rgb(238, 58, 94);
+    width: 160px;
+    border-radius: 100px;
+    height: 55px;
+    transition: .4s;
+    position: absolute;
+    margin: 358px 0px 0px 593px;
+    padding:16px 5px 1px 11px;
+    text-align: center;
+    font-size: 13px;
 }
 .bt2:hover{
     background: rgb(238, 58, 94);
     color: white;
   }
+  .icono .large{
+      color: white;
+      position: absolute;
+      margin: 500px 0px 0px 550px;
+      font-size: 45px;
+
+  }
  
-   .col .large{
+  .col .responsive-img{
      color: #FF5274;
-     font-size: 40px;
-     margin: 570px 0px 20px 20px;
+     width:10%;
+     margin:109px 0px 0px 40px;
+     
   } 
 
   .tit{
-    margin:-62px 0px 0px 92px;
+    margin:-50px 0px 0px 109px;
 
     
   }
   .par1{
-    margin: 7px 0px 20px 92px;
+    margin: 24px 0px 20px 92px;
 
     color: rgb(181, 187, 192);
   }
+ 
