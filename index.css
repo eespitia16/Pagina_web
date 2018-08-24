@@ -11,6 +11,8 @@ body{
 
     nav{
         background-color: transparent;
+        box-shadow: 0 0 transparent;
+        position: fixed;
 
         
     }
@@ -23,6 +25,9 @@ body{
     border-bottom: 0.1px solid rgb(209, 206, 206);  
     box-sizing: border-box;
     
+}
+.li {
+    color: transparent;
 }
 
 
@@ -38,18 +43,18 @@ body{
     margin: -54px 0px 0px 182px; 
     font-size: 10px;
 }
-.log1{
-    position: absolute;
-    margin: 23px 0px 0px 974px; 
-    font-size: 13px;
-    color:white;
-}
 .fondo{
     position: relative;
     padding: 0 41px;
     height: 594px;
     background: url(img/hero.jpg);
 
+}
+.log1{
+    position: absolute;
+    margin:-100px 0px 0px 974px; 
+    font-size: 13px;
+    color:white;
 }
 
 .log1:hover{
@@ -65,7 +70,7 @@ body{
   height: 40px;
   transition: .4s;
   position: absolute;
-  margin: 19px 0px 0px 1027px;
+  margin:-91px 0px 0px 1027px;
   text-align: center;
   font-size: 13px;
  
@@ -92,12 +97,12 @@ body{
 }
 
 
-.center-align{
+.intro h1{
     position: absolute;
     color: white;
     margin:125px 0px 0px 247px;
 }
-.center-align2{
+.intro h2{
     position: absolute;
     color: white;
     margin: 234px 0px 0px 142px;
@@ -171,7 +176,7 @@ body{
   section .row .col .center-align .center-align2 {
     width: 75%;
 }  
-.center-align .center-align2{
+.intro{
     padding-top: 28%;
 }
 
