@@ -9,7 +9,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-    
+    nav{
+        background-color: transparent;
+
+        
+    }
 
  .nav-wrapper{
     
@@ -87,6 +91,7 @@ body{
     position: absolute;
 }
 
+
 .center-align{
     position: absolute;
     color: white;
@@ -159,3 +164,20 @@ body{
     color: rgb(181, 187, 192);
   }
  
+  @media only screen and (max-width: 991px) {
+    .fondo{
+        width: 75%;
+    }
+  section .row .col .center-align .center-align2 {
+    width: 75%;
+}  
+.center-align .center-align2{
+    padding-top: 28%;
+}
+
+}
+@media only screen and (max-width: 1200px){
+    .intro{
+        padding-top: 28%;
+    }
+}
