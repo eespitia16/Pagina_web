@@ -35,82 +35,83 @@ nav ul li a:hover, .login:hover {
     color: #FF5274;
     background: transparent;
 }
+
+.fondo1{
+    position: relative;
+    min-height: 750px;
+    background: url(img/hero-min.jpg) center center;
+    background-size: cover;
+}
 section .row{
+    
     padding: 120px 0;
 }
-section .row .col .intro-icon{
+section .row .col .features-icon{
     margin-right: 20px;
 }
-.intro-icon, .intro-content{
-    display: inline-block;
-}
 
-
-.intro{
+.features1{
     width: 100%;
     text-align: center;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 15%;
 }
-.intro h1{
+.features1 h1{
     font-size: 60px;
     color: white;
     margin: auto;  
     width: fit-content;
 }
-.intro p{
+.features1 p{
     font-size: 20px;
     color: white;
 }
-
-.fondo{
-    position: relative;
-    min-height: 750px;
-    background: url(img/hero-min.jpg) center center;
-    background-size: cover;
+.features-icon, .features-content{
+    display: inline-block;
 }
-.btn{
-    padding: 8px 35px 8px 35px;
-    border-radius: 100px;
+
+.boton_1{
+    padding: 8px 40px;
+    border-radius: 60px;
     font-size: 13px;
-    border: 1.5px white solid;
+    border: 2px white solid;
   }
-.btn{
+.boton_1{
     transition: .4s;
   }
-.btn:hover{
+.boton_1:hover{
     color: #FF5274;
-    border: 1.5px #FF5274 solid;
+    border: 2px #FF5274 solid;
     background: transparent;
   }
-.intro article{
+.features1 article{
     margin-right: 188px;
     margin-top: 113px;
 }
-.intro  article a{
+.features1  article a{
     font-size: 13px;
     color: white;
     padding: 17px 43px;
     border-radius: 100px;
     background-color: #FF5274;
 }
-.intro  article a:hover{
+.features1  article a:hover{
     background-color:rgba(255, 82, 117, 0.788);
     color: white;
 }
-.intro  section{
+.features1 section{
     margin-top: -21px;
     margin-left: 192px;
 }
-.intro  section a{
+.features1 section a{
     font-size: 13px;
     color: #FF5274;
     padding: 15px 40px;
     border-radius: 100px;
     border: 2px solid #FF5274; 
 }
-.intro  section a:hover{
+.features1 section a:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
@@ -142,6 +143,7 @@ h3, h5{
 }
 h3{
     font-size: 24px;
+    margin-bottom: 20px;
 }
 h5{
     font-size: 15px;
@@ -154,16 +156,20 @@ p{
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
-.intro-icon img{
+.features2 p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.features-icon img{
     width: 64%;
     font-weight: 700;
 }
-.intro-icon{
+.features-icon{
     vertical-align: top;
     padding: 6px 0 0;
     margin-right: 20px;
 }
-.intro-content {
+.features-content {
     width: 70%;
 }
 .row{
@@ -176,29 +182,29 @@ p{
     margin-right: auto;
     margin-left: auto;
 }
-.intro-dos{
+.features2{
     background: #F3F4F8;
     position: relative;
 }
-.intro-dos .device-img {
+.features2 .device-img {
     position: absolute;
-    bottom: -365px;
+    bottom: -350px;
     right: 61%;
 }
-.devices {
+.devices, .features {
     position: relative;
 }
-.intro-dos h3 {
+.features2 h3 {
     margin: 0 0 20px;
 }
 
-.intro-dos .ipad-wrap {
+.features2 .ipad-wrap {
     width: 706px;
     height: 1002px;
     background: url(img/ipad-device.png) center center no-repeat;
     z-index: 1;
 }
-.intro-dos .iphone-wrap {
+.features2 .iphone-wrap {
     width: 304px;
     height: 620px;
     background: url(img/iphone6.png) center center no-repeat;
@@ -207,12 +213,135 @@ p{
     bottom: 129px;
     z-index: 2;
 }
+.features2 ul.conte-icon {
+    margin-top: 50px;
+}
+.features2 ul.conte-icon li {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #E6E9EA;
+}
+.features2 ul.conte-icon li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.features2 .content {
+    display: inline-block;
+    width: 75%; 
+}
+.recycle{
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
+}
+.user{
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
+}
+.test{
+    width: 35px;
+    margin-right: 20px;
+    vertical-align: top;
+    padding: 6px 0 0;
+}
+.features3{
+    background: #fff;
+}
+.features{
+    margin-top: -20px;
+    z-index: 3;
+    overflow: hidden;
+}
+.boton{
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 8px 40px;
+    color: #FF5274;
+}
+.boton:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+}
+.features .boton {
+    margin-top: 20px;
+}
+ .features .macbook-wrap {
+    position: relative;
+    height: 540px;
+    left: 35%;
+    top: -600px;
+    background: url(img/macbook-pro.png) center center no-repeat;
+}  
+.responsive-img{
+    display: none;
+}
+.features4 {
+    background:url(img/polygonal-bg.jpg) center center no-repeat #333844;
+    position: relative;
+    padding: 120px 0;
+}
+.col-m-12 h2, .col-m-12 p{
+   color: #E6E9EA;
+   text-align: center;
+}
 
 
-
-
-
-
+.col-m-12 h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+.features4 section{
+    margin-top: -14px;
+    margin-left: 484px;
+}
+.features4 section a{
+    font-size: 13px;
+    color: #FF5274;
+    padding: 0px 40px;
+    border-radius: 100px;
+    border: 2px solid #FF5274; 
+}
+.features4 section a:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+} 
+.btn, .btn-large, .btn-small {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+}
+    
+    .logo-placeholder{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+       bottom: -150px;
+        left: 40%;
+        animation: efecto 3s alternate infinite;
+    }
+    @keyframes efecto {
+        0%{
+            transform: translateY(0);
+        }
+        34%{
+            transform: translateY(-10px);
+        }
+        64%{
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
 
 
 @media only screen and (min-width: 768px){
@@ -224,26 +353,48 @@ p{
     section .row .col .intro-content {
       width: 75%;
     }  
-    .intro{
+    .features1{
       padding-top: 28%;
+    }
+    .devices{
+        display: none;
+    }
+    .features .macbook-wrap{
+        display: none;
+    }
+    .responsive-img{
+        display: block;
+        width: 85%;
+        margin: 15% auto 0;
+    }
+    img{
+        width: 100%;
+        margin-top: -83px;
+    }
+    .logo-placeholder{
+        vertical-align: middle;
     }
 }
 @media only screen and (min-width: 992px){
     .container {
         width: 970px;
     }
-    .col-md-offset-7 {
+    .col-m-offset-7 {
         margin-left: 58%;
     }
-    .col-md-5 {
+    .col-m5 {
         float: left;
-        width: 42%;
+        width: 41%;
     }
+    .col-md-12 {
+        width: 100%;
+    }
+  
     
 }
 @media only screen and (min-width: 1200px){
-    .intro{
-        padding-top: 20%;
+    .features{
+        padding-top:0;
       }
     .container {
         width: 1170px ;
