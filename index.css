@@ -2,36 +2,49 @@
 body {
     font-family: 'Open Sans', sans-serif;  
 }
-nav{
-    box-shadow: 0 0 transparent;
+.nav{
     position: fixed;
+    height: auto;
+    background: transparent;
+    font-size: 13px;
+    transition: .5s;
+    box-shadow: 0px 0px transparent;
+    z-index: 999;
 }
-nav .row{
+.nav.is-down {
+    background: #232731;
+}
+.nav.is-down>.container {
+    border: 0;
+    padding: 15px 0
+}
+.nav .row{
     margin: 0;
 }
-nav .container{
+.nav .container{
+    transition: .5s;
     width: 90%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding: 28.5px 0;
 }
-nav .login{
+.nav .login{
     margin-right: 40px;
 }
-nav .login>li:nth-child(2)>a{
+.nav .login>li:nth-child(2)>a{
     background-color: transparent;
     box-shadow: 0 0 transparent;
     padding: 0 40px;
     border-radius: 100px;
     border: 1.5px white solid;
 }
-nav .login>li:nth-child(2)>a:hover{
+.nav .login>li:nth-child(2)>a:hover{
     border: solid 1px #FF5274;
 }
-nav ul li a, .login {
+.nav ul li a, .login {
     transition: .4s;
     font-size: 13px;
 }
-nav ul li a:hover, .login:hover {
+.nav ul li a:hover, .login:hover {
     color: #FF5274;
     background: transparent;
 }
@@ -73,14 +86,15 @@ section .row .col .features-icon{
 
 .boton_1{
     padding: 8px 40px;
-    border-radius: 60px;
+    border-radius: 40px;
     font-size: 13px;
     border: 2px white solid;
   }
 .boton_1{
     transition: .4s;
   }
-.boton_1:hover{
+
+  .btn .boton_1:hover{
     color: #FF5274;
     border: 2px #FF5274 solid;
     background: transparent;
@@ -249,13 +263,43 @@ p{
     padding: 6px 0 0;
 }
 .features3{
+    background: #F3F4F8;
+}
+.features{
+    z-index: 3;
+    overflow: hidden;
+    margin-top: -21px;
+}
+.features3 p {
+padding: 8px 2px;
+}
+.features3,  .boton {
+    font-size: 15px;
+    line-height: 29px;
+    color:grey;
+    padding-bottom: 20px;
+}
+.features4{
     background: #fff;
 }
 .features{
-    margin-top: -20px;
     z-index: 3;
     overflow: hidden;
 }
+.a{
+    padding: 8px 2px;
+    
+}
+.b{
+    font-size: 15px;
+    line-height: 29px;
+    color: rgba(28, 54, 83, .6);
+    padding-bottom: 20px;
+}
+.features3 .container .row{
+    padding: 120px 0;
+}
+
 .boton{
     font-size: 13px;
     display: inline-block;
@@ -273,61 +317,65 @@ p{
     margin-top: 20px;
 }
  .features .macbook-wrap {
-    position: relative;
-    height: 540px;
-    left: 35%;
-    top: -600px;
+    position: absolute;
+    width: 915px;
+    height: 530px;
+    left: 50%;
+    top: 115px;
     background: url(img/macbook-pro.png) center center no-repeat;
 }  
 .responsive-img{
     display: none;
 }
-.features4 {
-    background:url(img/polygonal-bg.jpg) center center no-repeat #333844;
+.features4{
+    margin-top: 120px;
+    background: url(img/polygonal-bg.jpg) center center no-repeat #333844;
+    padding-bottom: 10px;
     position: relative;
-    padding: 120px 0;
 }
-.col-m-12 h2, .col-m-12 p{
-   color: #E6E9EA;
-   text-align: center;
-}
-
-
-.col-m-12 h2{
+.features4 h2 {
+    color: #fff;
+    margin: 0 0 20px;
+    text-align: center;
     font-size: 50px;
+}
+.features4 p {
+    color: #ACB1B4;
+    text-align: center;
+    font-size: 20px;
+}
+.features4 i {
+    font-family: Nunito,sans-serif;
     font-weight: 300;
+    font-size: 35px;
+    color: #F69D52;
+    vertical-align: top;
+    margin-left: -8px;
+    font-style: normal;
 }
-.features4 section{
-    margin-top: -14px;
-    margin-left: 484px;
-}
-.features4 section a{
+.features4 .boton{
     font-size: 13px;
+    margin-left: 480px;
+    border: 2px solid;
+    border-radius: 40px;
+    margin-top: 10px;
+    padding: 15px 40px;
     color: #FF5274;
-    padding: 0px 40px;
-    border-radius: 100px;
-    border: 2px solid #FF5274; 
 }
-.features4 section a:hover{
+.features4 .boton:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
-} 
-.btn, .btn-large, .btn-small {
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    background-color: transparent;
 }
-    
-    .logo-placeholder{
-        color: #fff;
-        font-size: 30px;
-        position: absolute;
-       bottom: -150px;
-        left: 40%;
-        animation: efecto 3s alternate infinite;
-    }
+.logo img{
+    font-size: 40px;
+}
+.features4 .logo{
+    position: absolute;
+    bottom: -128px;
+    left: 42%;
+    animation: efecto 3s alternate infinite;
+}
     @keyframes efecto {
         0%{
             transform: translateY(0);
@@ -343,68 +391,63 @@ p{
         }
     }
 
+    .features5 .left-align{
+        padding-right: 100px;
+        border-right: solid 1px #E6E9EA;
 
-@media only screen and (min-width: 768px){
-    .container {
-        width: 750px;
     }
-}
-@media only screen and (max-width: 991px) {
-    section .row .col .intro-content {
-      width: 75%;
-    }  
-    .features1{
-      padding-top: 28%;
+    .features5 .left-align2{
+    padding-left: 100px;
     }
-    .devices{
-        display: none;
+    @media only screen and (min-width: 768px){
+        .container {
+            width: 750px;
+        }
     }
-    .features .macbook-wrap{
-        display: none;
+    @media only screen and (max-width: 991px) {
+        section .row .col .intro-content {
+          width: 75%;
+        }  
+        .features1{
+          padding-top: 28%;
+        }
+        .devices{
+            display: none;
+        }
+        .features .macbook-wrap{
+            display: none;
+        }
+        .responsive-img{
+            display: block;
+            text-align: center;
+            margin: 15% auto 0;
+            width: 100%;
+            margin-top: -83px;
+        }
+        .responsive-img, .imgs{
+            width: 85%;
+        }    
     }
-    .responsive-img{
-        display: block;
-        width: 85%;
-        margin: 15% auto 0;
+    @media only screen and (min-width: 992px){
+        .container {
+            width: 970px;
+        }
+        .col-m-offset-7 {
+            margin-left: 58%;
+        }
+        .col-m5 {
+            float: left;
+            width: 41%;
+        }
+      
+        
     }
-    img{
-        width: 100%;
-        margin-top: -83px;
+    @media only screen and (min-width: 1200px){
+        .features1{
+            padding-top: 20%;
+          }
+        .container{
+            width: 1170px;
+        }
+             
     }
-    .logo-placeholder{
-        vertical-align: middle;
-    }
-}
-@media only screen and (min-width: 992px){
-    .container {
-        width: 970px;
-    }
-    .col-m-offset-7 {
-        margin-left: 58%;
-    }
-    .col-m5 {
-        float: left;
-        width: 41%;
-    }
-    .col-md-12 {
-        width: 100%;
-    }
-  
-    
-}
-@media only screen and (min-width: 1200px){
-    .features{
-        padding-top:0;
-      }
-    .container {
-        width: 1170px ;
-    }
-    
-}
-
-
-
-
-
-
-
