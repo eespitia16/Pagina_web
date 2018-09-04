@@ -2,6 +2,7 @@
 body {
     font-family: 'Open Sans', sans-serif;  
 }
+
 .nav{
     position: fixed;
     height: auto;
@@ -16,17 +17,18 @@ body {
 }
 .nav.is-down>.container {
     border: 0;
-    padding: 15px 0
+    padding: 15px 0;
 }
 .nav .row{
     margin: 0;
 }
 .nav .container{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: .5s;
     width: 90%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 28.5px 0;
+    padding: 28.5px 0px;
 }
+
 .nav .login{
     margin-right: 40px;
 }
@@ -48,84 +50,81 @@ body {
     color: #FF5274;
     background: transparent;
 }
-
-.fondo1{
-    position: relative;
-    min-height: 750px;
-    background: url(img/hero-min.jpg) center center;
-    background-size: cover;
-}
 section .row{
-    
     padding: 120px 0;
 }
-section .row .col .features-icon{
+section .row .col .intro-icon{
     margin-right: 20px;
 }
+.intro-icon, .intro-content{
+    display: inline-block;
+}
 
-.features1{
+.intro{
     width: 100%;
     text-align: center;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 15%;
 }
-.features1 h1{
+.intro h1{
     font-size: 60px;
     color: white;
     margin: auto;  
     width: fit-content;
 }
-.features1 p{
+.intro p{
     font-size: 20px;
     color: white;
 }
-.features-icon, .features-content{
-    display: inline-block;
-}
 
-.boton_1{
-    padding: 8px 40px;
-    border-radius: 40px;
+.fondo{
+    position: relative;
+    min-height: 750px;
+    background: url(img/hero.jpg) center center;
+    background-size: cover;
+}
+.btn{
+    padding: 8px 35px 8px 35px;
+    border-radius: 100px;
     font-size: 13px;
-    border: 2px white solid;
+    border: 1.5px white solid;
   }
-.boton_1{
+.btn{
     transition: .4s;
   }
-
-  .btn .boton_1:hover{
+.btn:hover{
     color: #FF5274;
-    border: 2px #FF5274 solid;
+    border: 1.5px #FF5274 solid;
     background: transparent;
   }
-.features1 article{
+.intro article{
     margin-right: 188px;
     margin-top: 113px;
 }
-.features1  article a{
+.intro  article a{
     font-size: 13px;
     color: white;
     padding: 17px 43px;
     border-radius: 100px;
     background-color: #FF5274;
 }
-.features1  article a:hover{
+.intro  article a:hover{
     background-color:rgba(255, 82, 117, 0.788);
     color: white;
 }
-.features1 section{
+.intro  section{
     margin-top: -21px;
     margin-left: 192px;
 }
-.features1 section a{
+.intro  section a{
     font-size: 13px;
     color: #FF5274;
     padding: 15px 40px;
     border-radius: 100px;
     border: 2px solid #FF5274; 
 }
-.features1 section a:hover{
+.intro  section a:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
@@ -152,8 +151,12 @@ section .row .col .features-icon{
         transform: translateY(0);
     }
 }
-h3, h5{
+h3, h5, h2{
     color: #3D4351;
+}
+h2{
+    font-size: 40px;
+    font-weight: 300;
 }
 h3{
     font-size: 24px;
@@ -170,20 +173,20 @@ p{
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
-.features2 p {
+.clase1 p {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.features-icon img{
+.intro-icon img{
     width: 64%;
     font-weight: 700;
 }
-.features-icon{
+.intro-icon{
     vertical-align: top;
     padding: 6px 0 0;
     margin-right: 20px;
 }
-.features-content {
+.intro-content {
     width: 70%;
 }
 .row{
@@ -196,11 +199,11 @@ p{
     margin-right: auto;
     margin-left: auto;
 }
-.features2{
+.clase1{
     background: #F3F4F8;
     position: relative;
 }
-.features2 .device-img {
+.clase1 .device-img {
     position: absolute;
     bottom: -350px;
     right: 61%;
@@ -208,17 +211,17 @@ p{
 .devices, .features {
     position: relative;
 }
-.features2 h3 {
+.clase1 h3 {
     margin: 0 0 20px;
 }
 
-.features2 .ipad-wrap {
+.clase1 .ipad-wrap {
     width: 706px;
     height: 1002px;
     background: url(img/ipad-device.png) center center no-repeat;
     z-index: 1;
 }
-.features2 .iphone-wrap {
+.clase1 .iphone-wrap {
     width: 304px;
     height: 620px;
     background: url(img/iphone6.png) center center no-repeat;
@@ -227,20 +230,20 @@ p{
     bottom: 129px;
     z-index: 2;
 }
-.features2 ul.conte-icon {
+.clase1 ul.conte-icon {
     margin-top: 50px;
 }
-.features2 ul.conte-icon li {
+.clase1 ul.conte-icon li {
     margin-top: 20px;
     padding-bottom: 20px;
     border-bottom: solid 1px #E6E9EA;
 }
-.features2 ul.conte-icon li:last-child {
+.clase1 ul.conte-icon li:last-child {
     padding-bottom: 0;
     border-bottom: none;
 }
 
-.features2 .content {
+.clase1 .content {
     display: inline-block;
     width: 75%; 
 }
@@ -262,41 +265,25 @@ p{
     vertical-align: top;
     padding: 6px 0 0;
 }
-.features3{
-    background: #F3F4F8;
+.clase2{
+    background: #fff;
 }
 .features{
     z-index: 3;
     overflow: hidden;
     margin-top: -21px;
 }
-.features3 p {
-padding: 8px 2px;
-}
-.features3,  .boton {
-    font-size: 15px;
-    line-height: 29px;
-    color:grey;
-    padding-bottom: 20px;
-}
-.features4{
-    background: #fff;
-}
-.features{
-    z-index: 3;
-    overflow: hidden;
-}
-.a{
+.clase2 p{
     padding: 8px 2px;
     
 }
-.b{
+.clase2, .boton{
     font-size: 15px;
     line-height: 29px;
     color: rgba(28, 54, 83, .6);
     padding-bottom: 20px;
 }
-.features3 .container .row{
+.clase2 .container .row{
     padding: 120px 0;
 }
 
@@ -324,36 +311,34 @@ padding: 8px 2px;
     top: 115px;
     background: url(img/macbook-pro.png) center center no-repeat;
 }  
-.responsive-img{
+.de-img{
     display: none;
 }
-.features4{
+.clase3{
     margin-top: 120px;
     background: url(img/polygonal-bg.jpg) center center no-repeat #333844;
     padding-bottom: 10px;
     position: relative;
 }
-.features4 h2 {
+.clase3 h2 {
     color: #fff;
     margin: 0 0 20px;
     text-align: center;
-    font-size: 50px;
 }
-.features4 p {
+.clase3 p   {
     color: #ACB1B4;
     text-align: center;
-    font-size: 20px;
 }
-.features4 i {
+.clase3 i {
     font-family: Nunito,sans-serif;
     font-weight: 300;
-    font-size: 35px;
+    font-size: 25px;
     color: #F69D52;
     vertical-align: top;
     margin-left: -8px;
     font-style: normal;
 }
-.features4 .boton{
+.clase3 .boton{
     font-size: 13px;
     margin-left: 480px;
     border: 2px solid;
@@ -362,92 +347,129 @@ padding: 8px 2px;
     padding: 15px 40px;
     color: #FF5274;
 }
-.features4 .boton:hover{
+.clase3 .boton:hover{
     border: 2px solid #FF5274; 
     background: #FF5274;
     color: white;
 }
-.logo img{
-    font-size: 40px;
-}
-.features4 .logo{
+.clase3 .logo{
+    width: 230px;
+    height: 230px;
     position: absolute;
     bottom: -128px;
     left: 42%;
     animation: efecto 3s alternate infinite;
 }
-    @keyframes efecto {
-        0%{
-            transform: translateY(0);
-        }
-        34%{
-            transform: translateY(-10px);
-        }
-        64%{
-            transform: translateY(10px);
-        }
-        100%{
-            transform: translateY(0);
-        }
-    }
-
-    .features5 .left-align{
-        padding-right: 100px;
-        border-right: solid 1px #E6E9EA;
-
-    }
-    .features5 .left-align2{
+.clase4{
+    background: #F3F4F8;
+    padding-top: 200px;
+}
+.clase4 .left-align {
+    padding-right: 100px;
+    border-right: solid 1px #E6E9EA;
+}
+.clase4 .left-align2 {
     padding-left: 100px;
+}
+section:nth-child(6) .row{
+    padding: 0;
+}
+.clase5{
+    background: #F3F4F8;
+    margin-top: -20px;
+}
+.clase5 h2 {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 35px;
+    text-align: center;
+}
+a{
+    color: #FF5274;
+}
+.clase5 a.z {
+    color: rgba(28,54,83,.6);
+}
+.clase5 p{
+    text-align: center;
+}
+.clase5 .boton{
+    font-size: 13px;
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 2px 40px;
+    color: #FF5274;
+    margin-left: 580px;
+    margin-top: 20px;
+}
+.clase5 .boton:hover{
+    border: 2px solid #FF5274; 
+    background: #FF5274;
+    color: white;
+}
+.clase5 .row{
+    margin: 5px;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    .container {
+        width: 750px;
     }
-    @media only screen and (min-width: 768px){
-        .container {
-            width: 750px;
-        }
+}
+@media only screen and (max-width: 991px) {
+    section .row .col .intro-content {
+      width: 75%;
+    }  
+    .intro{
+      padding-top: 28%;
     }
-    @media only screen and (max-width: 991px) {
-        section .row .col .intro-content {
-          width: 75%;
-        }  
-        .features1{
-          padding-top: 28%;
-        }
-        .devices{
-            display: none;
-        }
-        .features .macbook-wrap{
-            display: none;
-        }
-        .responsive-img{
-            display: block;
-            text-align: center;
-            margin: 15% auto 0;
-            width: 100%;
-            margin-top: -83px;
-        }
-        .responsive-img, .imgs{
-            width: 85%;
-        }    
+    .devices{
+        display: none;
     }
-    @media only screen and (min-width: 992px){
-        .container {
-            width: 970px;
-        }
-        .col-m-offset-7 {
-            margin-left: 58%;
-        }
-        .col-m5 {
-            float: left;
-            width: 41%;
-        }
-      
-        
+    .features .macbook-wrap{
+        display: none;
     }
-    @media only screen and (min-width: 1200px){
-        .features1{
-            padding-top: 20%;
-          }
-        .container{
-            width: 1170px;
-        }
-             
+    .de-img{
+        display: block;
+        text-align: center;
+        margin: 15% auto 0;
+        width: 100%;
+        margin-top: -83px;
     }
+    .de-img, .imgs{
+        width: 85%;
+    }    
+}
+@media only screen and (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+    .col-m-offset-7 {
+        margin-left: 58%;
+    }
+    .col-m5 {
+        float: left;
+        width: 41%;
+    }
+  
+    
+}
+@media only screen and (min-width: 1200px){
+    .intro{
+        padding-top: 20%;
+      }
+    .container{
+        width: 1170px;
+    }
+         
+}
+
+
+
+
+
+
+
