@@ -50,10 +50,10 @@ body {
     color: #FF5274;
     background: transparent;
 }
-section .row{
+.clase2 .row ,.clase1 .row{
     padding: 120px 0;
 }
-section .row .col .intro-icon{
+.scroll .row .col .intro-icon{
     margin-right: 20px;
 }
 .intro-icon, .intro-content{
@@ -81,7 +81,7 @@ section .row .col .intro-icon{
 .fondo{
     position: relative;
     min-height: 750px;
-    background: url(img/hero.jpg) center center;
+    background: url(../img/hero.jpg) center center;
     background-size: cover;
 }
 .btn{
@@ -129,7 +129,7 @@ section .row .col .intro-icon{
     background: #FF5274;
     color: white;
 } 
-.material-icons{
+.scroll.material-icons{
     color: #fff;
     font-size: 30px;
     position: absolute;
@@ -137,6 +137,7 @@ section .row .col .intro-icon{
     left: 50%;
     animation: efecto 3s alternate infinite;
 }
+
 @keyframes efecto {
     0%{
         transform: translateY(0);
@@ -173,6 +174,9 @@ p{
     color: rgba(28,54,83,.6);
     padding-bottom: 20px;
 }
+.clase0{
+    margin-top: 50px;
+}
 .clase1 p {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -189,10 +193,7 @@ p{
 .intro-content {
     width: 70%;
 }
-.row{
-    margin-right: -15px;
-    margin-left: -15px;
-}
+
 .container{
     padding-right: 15px;
     padding-left: 15px;
@@ -218,13 +219,13 @@ p{
 .clase1 .ipad-wrap {
     width: 706px;
     height: 1002px;
-    background: url(img/ipad-device.png) center center no-repeat;
+    background: url(../img/ipad-device.png) center center no-repeat;
     z-index: 1;
 }
 .clase1 .iphone-wrap {
     width: 304px;
     height: 620px;
-    background: url(img/iphone6.png) center center no-repeat;
+    background: url(../img/iphone6.png) center center no-repeat;
     position: absolute;
     left: 530px;
     bottom: 129px;
@@ -309,20 +310,22 @@ p{
     height: 530px;
     left: 50%;
     top: 115px;
-    background: url(img/macbook-pro.png) center center no-repeat;
+    background: url(../img/macbook-pro.png) center center no-repeat;
 }  
 .de-img{
     display: none;
 }
 .clase3{
     margin-top: 120px;
-    background: url(img/polygonal-bg.jpg) center center no-repeat #333844;
-    padding-bottom: 10px;
+    background: url(../img/polygonal-bg.jpg) center center no-repeat #333844;
+    padding-bottom: 190px;
     position: relative;
+    
 }
+
 .clase3 h2 {
     color: #fff;
-    margin: 0 0 20px;
+    margin: 120px 0 20px;
     text-align: center;
 }
 .clase3 p   {
@@ -340,7 +343,7 @@ p{
 }
 .clase3 .boton{
     font-size: 13px;
-    margin-left: 480px;
+    margin-left: 447px;
     border: 2px solid;
     border-radius: 40px;
     margin-top: 10px;
@@ -378,6 +381,45 @@ section:nth-child(6) .row{
     background: #F3F4F8;
     margin-top: -20px;
 }
+.galeria{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria .mascara{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(255,255,255, .5);
+    transition: .4s;
+    opacity: 0;
+}
+.galeria .mascara img{
+    position: absolute;
+    width: 10px;
+    color: #fff;
+    width: 20px;
+    font-size: 20px;
+    height: 20px;
+    top: 25px;
+    right: 35px;
+}
+.galeria .responsive-img{
+    transition: .3s;
+}
+.galeria:hover .responsive-img{
+    transform: scale(1.1)
+}
+.galeria:hover .mascara{
+    opacity: 1;
+}
 .clase5 h2 {
     font-size: 11px;
     font-weight: 500;
@@ -400,7 +442,7 @@ a{
     border-radius: 40px;
     padding: 2px 40px;
     color: #FF5274;
-    margin-left: 580px;
+    margin-left: 600px;
     margin-top: 20px;
 }
 .clase5 .boton:hover{
@@ -409,10 +451,81 @@ a{
     color: white;
 }
 .clase5 .row{
-    margin: 5px;
+    margin: 0;
+}
+.clase6 .row .col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.carousel.carousel-slider .carousel-item{
+    padding: 100px 0;
+}
+.clase6{
+    background: url(../img/testimonials-bg.jpg) center center no-repeat #333844;
+}
+.imgslide1,.imgslide2, .imgslide3{
+    width: 82px;
+    height: 82px;
+    margin: 0 auto;
+}
+.imgslide1{
+    background: url(../img/mani.jpg);
+    background-size: cover;
+}
+.imgslide2{
+    background: url(../img/130.jpg);
+    background-size: cover;
+}
+.imgslide3{
+    background: url(../img/avatar@2x.jpg);
+    background-size: cover;
+}
+.arrowright i, .arrowleft i{
+    color: rgba(255,255,255,1)
+}
+.arrowright,.arrowleft{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.arrowleft{
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(-80px);
+}
+.arrowright{
+    right: 80px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    opacity: 0;
+    transform: translateX(80px);
+}
+.carousel:hover .arrowright, .carousel:hover .arrowleft{
+    opacity: 1;
+    transform: translateX(0);
 }
 
-
+.clase6{
+    text-align: center;
+}
+.clase6 label{
+    width: 80%;
+    height: 55px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    border: 1px solid #E6E9EA;
+    text-align: left;
+    position: relative;
+}
+.e.material-icons{
+    color: #FF5274;
+}
 
 @media only screen and (min-width: 768px){
     .container {

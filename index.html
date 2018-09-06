@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Página Web</title>
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <div>
                         <ul>
                             <li><a href="">FEATURES</a></li>
-                            <li><a href="">img</a></li>
+                            <li><a href="">ASSETS</a></li>
                             <li><a href="">BLOG</a></li>
                             <li><a href="">DOWNLOAD</a></li>
                         </ul>
@@ -38,11 +38,11 @@
                 <p>Introducing"Sedna".A responsive one page website, designed & developed exclusively for Codrops.</p>
                 <article><a href="">DOWNLOAD</a> </article>
                 <section><a href="">LEARN MORE</a> </section>  
-                <i class="material-icons">expand_more</i>   
+                <i class="scroll material-icons">expand_more</i>   
             </div>
     </header>
 
-    <section >
+    <section class="clase0" >
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l4">
@@ -233,8 +233,8 @@
 
     <section class="clase5">
         <div class="row">
-            <div class="col m12 l4">
-                <img class="responsive-img" class="img2" src="img/blog-img-01.jpg" >
+            <div class="col m12 l4 s12">     
+                <img src="img/blog-img-01.jpg" alt="" class="materialboxed responsive-img">
                 <h2>
                     <a href="#">PRODUCT</a>
                 </h2>
@@ -242,8 +242,8 @@
                     <a class="z" href="#">Getting started with Sedna ></a>
                 </p>
             </div> 
-            <div class="col m12 l4 ">
-                <img class="responsive-img" class="img2" src="img/blog-img-02.jpg" >
+            <div class="col m12 l4 s12">
+                <img src="img/blog-img-02.jpg" class="materialboxed responsive-img"> 
                 <h2>
                     <a href="#">TECHNOLOGY</a>
                 </h2>
@@ -251,8 +251,8 @@
                     <a class="z" href="#">Why IE8 support is deminishing ></a>
                 </p>
             </div>
-            <div class="col m12 l4 ">
-                <img class="responsive-img" class="img2" src="img/blog-img-03.jpg" >
+            <div class="col m12 l4 s12">
+                <img src="img/blog-img-03.jpg"alt=""class="materialboxed responsive-img">
                 <h2>
                     <a href="#">PRODUCT</a>
                 </h2>
@@ -260,19 +260,72 @@
                     <a class="z" href="#">Sedna tutorial: How to begin your ></a>
                 </p>
             </div>
-            <a href="#" class="boton">MORE NEWS</a>
+               <a href="#" class="boton">MORE NEWS</a>
         </div>
     </section>
 
-    
-    
+    <section class="clase6">
+        <div class="row">
+            <div class="col s12 ">
+                <div class="carousel carousel-slider center">
+                    <div class="carousel-item center-align" href="#one!">
+                        <div class="imgslide1 circle"></div>
+                        <h2>"Lorem ipsum dolor sit amet, nullam lucia nisi."</h2>
+                        <h5 class="light grey-text text-lighten-3">PETER FINLAN, PRODUCT DESIGNER</h5>
+                    </div>
+                
+                    <div class="carousel-item center-align" href="#two!">
+                        <div class="imgslide2 circle"></div>
+                        <h2>"Nunc vel maximus purus. Nullam ac urna ornare."</h2>
+                        <h5 class="light grey-text text-lighten-3">MANOELA ILIC, FOUNDER @ CODROPS.</h5>
+                    </div>
+                
+                    <div class="carousel-item center-align" href="#three!">
+                        <div class="imgslide3 circle"></div>
+                        <h2>"Nullam ac urna ornare, ultrices nisl ut, lacinia nisi."</h2>
+                        <h5 class="light grey-text text-lighten-3">BLAZ ROBAR, PIXEL GURU</h5>
+                    </div>
+                    <div class="arrowleft">
+                        <i class="medium material-icons">chevron_left</i>
+                    </div>
+                    <div class="arrowright">
+                        <i class="medium material-icons">chevron_right</i>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
 
-    
-       
-<script src="main.js"></script>
-<script src="js/materialize.min.js"></script>
+    <section class="clase7">
+        <div class="row">
+            <div class="col m6 offset-m3">
+                <h3>Get started with Sedna, absolutely free</h3>
+                <p>Grab your copy today, exclusively from Codrops</p>
+                <form class="singup" action="#">
+                    <div class="formulario">        
+                        <i class=" e material-icons">email</i>
+                        <label for="input_text">Enter your email</label>
 
-</body>
+                    </div>
+                    <div class="formulario">        
+                        <i class=" e material-icons">lock</i> 
+                        <label for="input_text">Enter your password</label>
+  
+                    </div>
+
+                </form>
+            </div>
+            
+        </div>
+ 
+                             
+    </section>
+
+   
+        <script src="js/materialize.min.js"></script>
+        <script src="js/main.js"></script>
+
+   </body>
 </html>
 
 
