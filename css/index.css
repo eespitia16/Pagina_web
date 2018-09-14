@@ -175,7 +175,7 @@ p{
     padding-bottom: 20px;
 }
 .clase0{
-    margin-top: 50px;
+    padding-top: 160px;
 }
 .clase1 p {
     margin-bottom: 0;
@@ -275,7 +275,7 @@ p{
     margin-top: -21px;
 }
 .clase2 p{
-    padding: 8px 2px;
+    padding: 8px 0px;
     
 }
 .clase2, .boton{
@@ -306,8 +306,8 @@ p{
 }
  .features .macbook-wrap {
     position: absolute;
-    width: 915px;
-    height: 530px;
+    width: 916px;
+    height: 540px;
     left: 50%;
     top: 115px;
     background: url(../img/macbook-pro.png) center center no-repeat;
@@ -316,11 +316,10 @@ p{
     display: none;
 }
 .clase3{
-    margin-top: 120px;
+    margin-top: 60px;
     background: url(../img/polygonal-bg.jpg) center center no-repeat #333844;
     padding-bottom: 190px;
-    position: relative;
-    
+    position: relative; 
 }
 
 .clase3 h2 {
@@ -379,7 +378,7 @@ section:nth-child(6) .row{
 }
 .clase5{
     background: #F3F4F8;
-    margin-top: -20px;
+   padding-top: 140px;
 }
 .galeria{
     overflow: hidden;
@@ -514,24 +513,73 @@ a{
 .clase6{
     text-align: center;
 }
-.clase6 label{
-    width: 80%;
+.clase6 .autocomplete-input{
+    width: 50%;
     height: 55px;
     margin: 0 auto 10px;
     border-radius: 5px;
     border: 1px solid #E6E9EA;
     text-align: left;
     position: relative;
+    
 }
-.e.material-icons{
+
+.clase7 input{
+    text-align: center;
+    border: none;
+    color: transparent;
+}
+
+.clase7 .row .col.s12 {
+    width: 60%;
+    margin-left: 23%;
+
+}
+.clase7 .input-field{
+    width: 250px;
+    height: 55px;
+    margin: 10px auto 10px;
+    border: 1px solid #E6E9EA;
+    text-align: left;
+    position: relative;
+    font: inherit;
+    color: inherit;
+    
+}
+.clase7 .material-icons{
     color: #FF5274;
 }
+
+.clase7 .waves-effect{
+    padding: 15px 0;
+    border: 2px solid #FF5274;
+    border-radius: 3px;
+    width: 36%;
+    font-size: 13px;
+    background-color: #FF5274;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 37%;
+   
+}
+.clase7 .waves-effect:hover {
+    color: #fff;
+    background-color: #D7405D;
+    border-color: #D7405D;
+}
+
+
 
 @media only screen and (min-width: 768px){
     .container {
         width: 750px;
     }
 }
+
+
+
 @media only screen and (max-width: 991px) {
     section .row .col .intro-content {
       width: 75%;
@@ -554,9 +602,11 @@ a{
     }
     .de-img, .imgs{
         width: 85%;
-    }    
+    }   
+   
 }
 @media only screen and (min-width: 992px){
+    
     .container {
         width: 970px;
     }

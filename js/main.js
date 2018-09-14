@@ -23,10 +23,24 @@ document.addEventListener('DOMContentLoaded', function() {
     if(window.scrollY>0) navBar.classList.add('is-down')
     else navBar.classList.remove('is-down')
   })
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea2').characterCounter();
-  })
+})
+
+document.addEventListener('DOMContentLoaded', function() {
+
+
+  var options = {
+    data: {
+      "html": null,
+      "css": null,
+      "Google": 'https://placehold.it/250x250'
+    },
+    onAutocomplete: function(texto){
+      console.log('diste clic ${texto}')
+    }
+  }
   
+  var elemsinput = document.querySelectorAll('.autocomplete');
+  var instancesinput = M.Autocomplete.init(elemsinput, options);
 })
 
 
