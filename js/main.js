@@ -42,5 +42,5 @@ document.addEventListener('DOMContentLoaded', function() {
   var elemsinput = document.querySelectorAll('.autocomplete');
   var instancesinput = M.Autocomplete.init(elemsinput, options);
 })
-
+AOS.init();
 
